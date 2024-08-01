@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d72c762128.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+  <body>
+    <section id="logo-sec">
+      <div id="logo">
+        <img src=".\images\logo.jpeg" alt="logo" />
+        <h1>CS Auctions</h1>
+      </div>
+    </section>
+    <section id="login-sec">
+      <div id="sec-login">
+        <form>
+          <h3>Login</h3>
+          <p>Welcome back. Enter your credentials to access your account.</p>
+          <label for="email"
+            >Email Address
+            <input type="email" id="email" required placeholder="Email Address"
+          /></label>
+          <label for="password"
+            >Password
+            <input
+              type="password"
+              id="password"
+              required
+              placeholder="Enter your password"
+          /></label>
+          <p id="for"><a href="#">Forgot Password?</a></p>
+          <label for="remember"
+            ><input type="checkbox" id="remember" checked /> Keep me signed in
+          </label>
+          <button type="submit" onclick="login()" id="submit1" formaction="">
+            Continue
+          </button>
+          <p id="or">------- or sign up with -------</p>
+          <div id="other">
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <p id="dont">
+            Don't have an account? <a href="./register.html">Sign up here</a>
+          </p>
+        </form>
+      </div>
+      <div id="sec-img">
+        <img src=".\images\login.jpg" alt="login" />
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta chatset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS Auctions</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d72c762128.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="header">
+      <div id="left-header">
+        <img src=".\images\logo.jpeg" alt="logo" />
+        <h1>CS Auctions</h1>
+      </div>
+      <div id="right-header">
+        <nav id="nav-div">
+          <ul id="nav-list">
+            <li id="nav-item">
+              <a href="#" class="active"
+                >Auctions <i class="fa-solid fa-angle-down"></i
+              ></a>
+            </li>
+            <li id="nav-item">
+              <a href="#">Bidding <i class="fa-solid fa-angle-down"></i></a>
+            </li>
+            <li id="nav-item">
+              <a href="#">About <i class="fa-solid fa-angle-down"></i></a>
+            </li>
+            <li id="nav-item">
+              <a href="#"
+                ><i class="fa-solid fa-language"></i> English
+                <i class="fa-solid fa-angle-down"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <img
+          id="user-img"
+          src=".\images\user1.jpg"
+          onclick="toggleMenu()"
+          ondblclick="hideMenu()"
+        />
+      </div>
+    </section>
+    <div id="menu-list">
+      <div id="menu-pro">
+        <img src=".\images\user1.jpg" />
+        <div id="det">
+          <h3>Chandu</h3>
+          <p>scsekhar8006@gmail.com</p>
+        </div>
+      </div>
+      <ul>
+        <li><a href="#">View Profile</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">My bids</a></li>
+        <li><a href="#">Credit Cards</a></li>
+        <li><a href="#">My Auctions</a></li>
+        <li><a href="#">Invite Colleagues</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Notifications</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">API</a></li>
+      </ul>
+      <a href="#" id="logout">Log out</a>
+    </div>
+
+    <div id="welcome-div">
+      <span id="welcome">Welcome <span id="name">Chandu!</span></span>
+    </div>
+
+    <section id="products">
+      <div id="product-card">
+        <img src=".\images/headphones-sony.jpg" id="prod-img0" />
+        <span>Live Auction</span>
+        <h3>Sony Black Wired Headphones</h3>
+        <div id="bid">
+          <h4>Minimum Bid</h4>
+          <h4>$100</h4>
+        </div>
+        <div id="bid">
+          <h4>Current Bid</h4>
+          <h4>$157</h4>
+        </div>
+        <p>Ends in : 1 day 12 hrs 3 mins</p>
+        <button id="bid-btn" onclick="window.location.href='product.html'">
+          Bid Now <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+      <div id="product-card">
+        <img src=".\images/apple-pods.jpeg" id="prod-img1" />
+        <span>Live Auction</span>
+        <h3>Apple Air 2 Ear Pods</h3>
+        <div id="bid">
+          <h4>Minimum Bid</h4>
+          <h4>$150</h4>
+        </div>
+        <div id="bid">
+          <h4>Current Bid</h4>
+          <h4>$177</h4>
+        </div>
+        <p>Ends in : 1 day 15 hrs 6 mins</p>
+        <button id="bid-btn">
+          Bid Now <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+      <div id="product-card">
+        <img src=".\images/mi-pb.jpg" id="prod-img2" />
+        <span>Live Auction</span>
+        <h3>Xiaomi Mi Power Bank</h3>
+        <div id="bid">
+          <h4>Minimum Bid</h4>
+          <h4>$120</h4>
+        </div>
+        <div id="bid">
+          <h4>Current Bid</h4>
+          <h4>$137</h4>
+        </div>
+        <p>Ends in : 1 day 2 hrs 15 mins</p>
+        <button id="bid-btn">
+          Bid Now <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+      <div id="product-card">
+        <img src=".\images/speaker.jpg" id="prod-img3" />
+        <span>Live Auction</span>
+        <h3>Sony Wireless Bluetooth Speaker</h3>
+        <div id="bid">
+          <h4>Minimum Bid</h4>
+          <h4>$145</h4>
+        </div>
+        <div id="bid">
+          <h4>Current Bid</h4>
+          <h4>$157</h4>
+        </div>
+        <p>Ends in : 0 day 22 hrs 45 mins</p>
+        <button id="bid-btn">
+          Bid Now <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+      <div id="product-card">
+        <img src=".\images/cctv.jpg" id="prod-img4" />
+        <span>Live Auction</span>
+        <h3>Xiaomi Mi CCTV Secret Camera</h3>
+        <div id="bid">
+          <h4>Minimum Bid</h4>
+          <h4>$103</h4>
+        </div>
+        <div id="bid">
+          <h4>Current Bid</h4>
+          <h4>$117</h4>
+        </div>
+        <p>Ends in : 0 day 18 hrs 17 mins</p>
+        <button id="bid-btn">
+          Bid Now <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+      <div id="product-card">
+        <img src=".\images/headphones-sony.jpg" id="prod-img5" />
+        <span>Live Auction</span>
+        <h3>Sony Black Wired Headphones</h3>
+        <div id="bid">
+          <h4>Minimum Bid</h4>
+          <h4>$100</h4>
+        </div>
+        <div id="bid">
+          <h4>Current Bid</h4>
+          <h4>$157</h4>
+        </div>
+        <p>Ends in : 1 day 12 hrs 3 mins</p>
+        <button id="bid-btn">
+          Bid Now <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+      <div id="product-card">
+        <img src=".\images/apple-pods.jpeg" id="prod-img6" />
+        <span>Live Auction</span>
+        <h3>Apple Air 2 Ear Pods</h3>
+        <div id="bid">
+          <h4>Minimum Bid</h4>
+          <h4>$150</h4>
+        </div>
+        <div id="bid">
+          <h4>Current Bid</h4>
+          <h4>$177</h4>
+        </div>
+        <p>Ends in : 1 day 15 hrs 6 mins</p>
+        <button id="bid-btn">
+          Bid Now <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+      <div id="product-card">
+        <img src=".\images/mi-pb.jpg" id="prod-img7" />
+        <span>Live Auction</span>
+        <h3>Xiaomi Mi Power Bank</h3>
+        <div id="bid">
+          <h4>Minimum Bid</h4>
+          <h4>$120</h4>
+        </div>
+        <div id="bid">
+          <h4>Current Bid</h4>
+          <h4>$137</h4>
+        </div>
+        <p>Ends in : 1 day 2 hrs 15 mins</p>
+        <button id="bid-btn">
+          Bid Now <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+      <div id="product-card">
+        <img src=".\images/speaker.jpg" id="prod-img8" />
+        <span>Live Auction</span>
+        <h3>Sony Wireless Bluetooth Speaker</h3>
+        <div id="bid">
+          <h4>Minimum Bid</h4>
+          <h4>$145</h4>
+        </div>
+        <div id="bid">
+          <h4>Current Bid</h4>
+          <h4>$157</h4>
+        </div>
+        <p>Ends in : 0 day 22 hrs 45 mins</p>
+        <button id="bid-btn">
+          Bid Now <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+      <div id="product-card">
+        <img src=".\images/cctv.jpg" id="prod-img9" />
+        <span>Live Auction</span>
+        <h3>Xiaomi Mi CCTV Secret Camera</h3>
+        <div id="bid">
+          <h4>Minimum Bid</h4>
+          <h4>$103</h4>
+        </div>
+        <div id="bid">
+          <h4>Current Bid</h4>
+          <h4>$117</h4>
+        </div>
+        <p>Ends in : 0 day 18 hrs 17 mins</p>
+        <button id="bid-btn">
+          Bid Now <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </section>
+    <div id="view-div">
+      <button id="view-all">
+        View All <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+    <section id="footer">
+      <div id="footer-top">
+        <div id="footer-left">
+          <div id="footer-logo">
+            <img src=".\images/logo-footer.png" />
+            <h1>CS Auctions</h1>
+          </div>
+          <div id="quick-links">
+            <ul id="links">
+              <li id="link-item"><a href="#">Products</a></li>
+              <li id="link-item"><a href="#">Contact</a></li>
+              <li id="link-item"><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div id="auc-div">
+            <a id="auc" href="#">Auctions</a>
+          </div>
+          <div id="bid-div">
+            <a id="bidding" href="#">Bidding</a>
+          </div>
+        </div>
+        <div id="footer-right">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div id="footer-bottom">
+        <p>© 2024 CS Auctions. All rights reserved.</p>
+      </div>
+    </section>
+    <script src=".\script.js"></script>
+  </body>
+</html>

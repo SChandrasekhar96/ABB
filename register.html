@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d72c762128.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="logo-sec">
+      <div id="logo">
+        <img src=".\images\logo.jpeg" alt="logo" />
+        <h1>CS Auctions</h1>
+      </div>
+    </section>
+    <section id="login-sec">
+      <div id="sec-login">
+        <form action=".\success.html">
+          <h3>Sign Up</h3>
+          <p id="line">
+            New bidders, as soon as you have submitted your information you will
+            be eligible to bid in the auction.
+          </p>
+          <label for="first"
+            >First Name
+            <input type="text" id="first" required placeholder="First Name"
+          /></label>
+          <label for="last"
+            >Last Name
+            <input type="text" id="last" required placeholder="Last Name"
+          /></label>
+          <label for="email"
+            >Email Address
+            <input
+              type="email"
+              id="email1"
+              required
+              placeholder="Email Address"
+          /></label>
+          <label for="password"
+            >Password
+            <input
+              type="password"
+              id="password1"
+              required
+              placeholder="Enter your password"
+          /></label>
+          <label for="remember"
+            ><input type="checkbox" id="remember" checked /> Recieve outbid
+            emails
+          </label>
+          <button type="submit" onclick="saveData()">Submit</button>
+          <p id="or">------- or sign up with -------</p>
+          <div id="other">
+            <a href="#"><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <p id="dont">Want to know more ? <a href="#">Auction Rules</a></p>
+        </form>
+      </div>
+      <div id="sec-img1">
+        <img src=".\images\registerhero.jpg" alt="register" />
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

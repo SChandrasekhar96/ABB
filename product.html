@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta chatset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biddings</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d72c762128.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="bid-sec" id="bid-sec1">
+      <div id="bid-div1">
+        <div id="bid-head">
+          <div id="head-left"><h1>Submit Bid</h1>
+            <p>Sony Black Wired Headphones</p>
+          </div>
+          <i class="fa-solid fa-xmark" onclick="hideup()"></i>
+        </div>
+        <form id="bid-form">
+          <p>Straight Bid</p>
+          <input type="number" id="str-bid" required />
+          <p>Maximum Bid</p>
+          <input type="number" id="max-bid" required/>
+          <div id="bid-val">
+            <h1>Minimum Bid</h1>
+            <h2>$100</h2>
+          </div>
+          <div id="bid-val">
+            <h1>Current Bid</h1>
+            <h2>$157</h2>
+          </div>
+          <p>Ends in : 1 day 12 hrs 3 mins</p>
+          <div id="sub">
+            <button type="submit" onclick="submit2()" formaction="">Submit Bid</button>
+          </div>
+          
+        </form>
+    </section>
+    <section id="header">
+      <div id="left-header">
+        <img src=".\images\logo.jpeg" alt="logo" />
+        <h1>CS Auctions</h1>
+      </div>
+      <div id="right-header">
+        <nav id="nav-div">
+          <ul id="nav-list">
+            <li id="nav-item">
+              <a href="#">Auctions <i class="fa-solid fa-angle-down"></i></a>
+            </li>
+            <li id="nav-item">
+              <a href="#">Bidding <i class="fa-solid fa-angle-down"></i></a>
+            </li>
+            <li id="nav-item">
+              <a href="#">About <i class="fa-solid fa-angle-down"></i></a>
+            </li>
+            <li id="nav-item">
+              <a href="#"
+                ><i class="fa-solid fa-language"></i> English
+                <i class="fa-solid fa-angle-down"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+                <img src=".\images\user1.jpg" alt="profile" id="user-img" onclick="toggleMenu()" ondblclick="hideMenu()"/>
+      </div>
+    </section>
+    <div id="menu-list" class="Chandu ravi">
+      <div id="menu-pro">
+        <img src=".\images\user1.jpg" />
+        <div id="det">
+          <h3>Chandu</h3>
+          <p>scsekhar8006@gmail.com</p>
+        </div>
+      </div>
+      <ul>
+        <li><a href="#">View Profile</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">My bids</a></li>
+        <li><a href="#">Credit Cards</a></li>
+        <li><a href="#">My Auctions</a></li>
+        <li><a href="#">Invite Colleagues</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Notifications</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">API</a></li>
+      </ul>
+      <a href="#" id="logout">Log out</a>
+    </div>
+    <section id="details">
+<div>
+    <a href="#" id="back"><i class="fa-solid fa-square-caret-left"></i> Back to Catalog</a>
+    <div id="product-card" class="card">
+        <img src=".\images\headphones-sony.jpg" id="proimage"/>
+        <span>Live Auction</span>
+        <h3>Sony Black Wired Headphones</h3>
+        <div id="bid">
+          <h4>Minimum Bid</h4>
+          <h4>$100</h4>
+        </div>
+        <div id="bid">
+          <h4>Current Bid</h4>
+          <h4>$157</h4>
+        </div>
+        <p>Ends in : 1 day 12 hrs 3 mins</p>
+      </div>
+</div>
+
+      <div id="product-det">
+        <h3>Description</h3>
+        <p>
+            Immerse yourself in pristine sound quality with the Sony Black Headphones. Crafted for audiophiles and casual listeners alike, these headphones deliver an exceptional audio experience with deep, resonant bass and crystal-clear highs. The sleek black design complements any style, whether you're on the go or relaxing at home.</br></br>
+            
+            Equipped with advanced noise-canceling technology, these headphones block out distractions so you can enjoy your music, podcasts, or calls without interference. Comfort is key with plush ear cushions that provide long-lasting comfort for extended listening sessions.</br></br>
+            
+            Designed for convenience, these headphones feature easy-to-use controls for adjusting volume, skipping tracks, and taking calls on the go. Foldable and compact, they're perfect for travel and storage, ensuring you can take your music with you wherever you go.</br></br>
+            
+            Whether you're commuting, working out, or simply unwinding, the Sony Black Headphones offer premium sound quality and comfort that elevate your listening experience to new heights.
+        </p></br>
+        <h3>Reviews</h3>
+        <div id="review">
+            <img id="user" src=".\images\user1.jpg">
+            <div id="reviews">
+                <div id="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>These headphones are a game-changer for my daily commute. The noise- canceling feature works like a charm.</p>
+                <h4>Kristin Watson</h4>
+                <h5>March 14,2021</h5>
+            </div>
+        </div>
+        <div id="review">
+            <img  id="user" src=".\images\user2.jpg">
+            <div id="reviews">
+                <div id="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>I'm blown away by the sound clarity these headphones offer</p>
+                <h4>Jenny Wilson</h4>
+                <h5>January 28,2021</h5>
+            </div>
+        </div>
+        <div id="review">
+            <img id="user" src=".\images\user3.jpg">
+            <div id="reviews">
+                <div id="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>As a frequent flyer, these headphones have become my must-have travel companion.</p>
+                <h4>Bessie Cooper</h4>
+                <h5>January 21,2021</h5>
+            </div>
+        </div>
+      </div>
+      <div id="recent-bids">
+        <ul id="bids">
+            <li>The Floor Bids $157</li>
+            <li>The Floor Bids $150</li>
+            <li>Internet Bidder Bids $145</li>
+            <li>The Floor Bids $140</li>
+            <li>Internet Bidder Bids $132</li>
+            <li>The Floor Bids $111</li>
+            <li>Internet Bidder Bids $109</li>
+            <li>The Floor Bids $105</li>
+        </ul>
+        <button id="bid-now" onclick="showup()">Bid Now <i class="fa-solid fa-angle-right"></i></button>
+      </div>
+    </section>
+    <section id="footer">
+      <div id="footer-top">
+        <div id="footer-left">
+          <div id="footer-logo">
+            <img src=".\images/logo-footer.png" />
+            <h1>CS Auctions</h1>
+          </div>
+          <div id="quick-links">
+            <ul id="links">
+              <li id="link-item"><a href="#">Products</a></li>
+              <li id="link-item"><a href="#">Contact</a></li>
+              <li id="link-item"><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div id="auc-div">
+            <a id="auc" href="#">Auctions</a>
+          </div>
+          <div id="bid-div">
+            <a id="bidding" href="#">Bidding</a>
+          </div>
+        </div>
+        <div id="footer-right">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div id="footer-bottom">
+        <p>© 2024 CS Auctions. All rights reserved.</p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
